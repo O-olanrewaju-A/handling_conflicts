@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+
+.contact-info {
+    font-size: 16px;
+    background-color: black;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+
+    position: relative;
+}
+
+.contact-info a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease;
+}
+
+.contact-info a:hover::after {
+    transform: scaleX(1);
+    width: 100%;
+}
+
+.contact-socials{
+    font-size: 18px;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 130px;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    width: 100%;
+}
